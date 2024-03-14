@@ -372,11 +372,11 @@ fontFamily: 'Montserrat',
 fontWeight: FontWeight.w600,
 height: 2,
 ),
-      )
+      ),
     ],
   ),
 ),
-        ],
+      ],
 ),
 
 

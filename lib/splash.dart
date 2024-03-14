@@ -41,7 +41,7 @@ class Splash extends StatelessWidget {
             // ),
             GestureDetector(
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(builder: (context) => HomePage()));
+                Navigator.push(context, MaterialPageRoute(builder: (context) =>const HomePage()));
               },
               child: Container(
                 width: 278,
