@@ -67,6 +67,11 @@ flutter:
       - assets/images/image 1.png
       - assets/images/angular.png
       - assets/images/Rectangle 8.png
+      - assets/images/food.jpg
+      - assets/images/food2.png
+      - assets/images/food3.png
+      - assets/images/food4.png      
+      - assets/images/food6.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

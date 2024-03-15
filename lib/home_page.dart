@@ -197,7 +197,7 @@ class HomePage extends StatelessWidget {
                         },
                         child: Image.asset('assets/images/image 1.png')),
                     const Text(
-                      'Kannur',
+                      'Payyanur',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
@@ -233,7 +233,7 @@ class HomePage extends StatelessWidget {
               },
               child: Image.asset('assets/images/image 1.png')),
                     const Text(
-                      'Thalassery',
+                      'Thaliparamba',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
@@ -280,7 +280,7 @@ class HomePage extends StatelessWidget {
                         },
                         child: Image.asset('assets/images/image 1.png')),
                     const Text(
-                      'Kannur',
+                      'Kuthuparamb',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
@@ -316,7 +316,7 @@ class HomePage extends StatelessWidget {
               },
               child: Image.asset('assets/images/image 1.png')),
                     const Text(
-                      'Thalassery',
+                      'Eranjoli',
                       textAlign: TextAlign.center,
                       style: TextStyle(
                         color: Colors.black,
