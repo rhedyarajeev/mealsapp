@@ -81,8 +81,7 @@ class AccountScreen extends StatelessWidget {
             padding: EdgeInsets.only(
               right: 280.0,
               bottom: 5.0,
-              
-            ),
+              ),
             child: Text(
               'Last Name',
               style: TextStyle(
