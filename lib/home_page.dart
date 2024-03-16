@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mealsapp/Account_screen.dart';
 import 'package:mealsapp/menu.dart';
 
 
@@ -12,6 +13,13 @@ class HomePage extends StatelessWidget {
         backgroundColor: const Color(0xFF817400),
         actions: [
           ClipOval(
+            child: GestureDetector(
+             onTap: () {
+             Navigator.push(
+             context,
+             MaterialPageRoute(builder: (context) => const AccountScreen()),
+      );
+    },
             child: SizedBox(
               width: 40,
               height: 40,
@@ -21,12 +29,18 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          ),
+
+          
         ],
         leading: IconButton(
           icon: const Icon(Icons.shopping_cart),
           onPressed: () {},
         ),
+        
       ),
+
+      
       backgroundColor: const Color(0xFFD9D9D9),
       body: Column(
         children: [

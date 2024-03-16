@@ -60,6 +60,7 @@ borderRadius: BorderRadius.circular(10),
 ),
 ),
 
+
      child:  Row(
                   children: [
                     const Padding(
@@ -94,6 +95,8 @@ borderRadius: BorderRadius.circular(10),
     ],
 
    ),
+
+   
 
 const SizedBox(
               height: 10,
