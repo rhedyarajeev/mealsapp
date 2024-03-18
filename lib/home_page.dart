@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:mealsapp/Account_screen.dart';
+import 'package:mealsapp/cart_screen.dart';
 import 'package:mealsapp/menu.dart';
+import 'package:mealsapp/unavailable_screen.dart';
 
 
 class HomePage extends StatelessWidget {
@@ -33,11 +35,16 @@ class HomePage extends StatelessWidget {
 
           
         ],
+        
+
         leading: IconButton(
           icon: const Icon(Icons.shopping_cart),
-          onPressed: () {},
+          onPressed: () {
+            Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const CartScreen())
+            );
+          },
         ),
-        
       ),
 
       
@@ -52,7 +59,9 @@ class HomePage extends StatelessWidget {
               right: 16.0,
               bottom: 16.0,
             ),
+            
             child: Text(
+              
               'Select a Outlet Near You..!',
               style: TextStyle(
                 color: Colors.black,
@@ -76,6 +85,13 @@ class HomePage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(10),
               ),
             ),
+            child: GestureDetector(
+    onTap: () {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Unavailable()),
+      );
+    },
             child: Row(
               children: [
                 Image.asset(
@@ -98,8 +114,8 @@ class HomePage extends StatelessWidget {
               ],
             ),
           ),
-          
- const SizedBox(height: 40),
+          ),  
+       const SizedBox(height: 40),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [

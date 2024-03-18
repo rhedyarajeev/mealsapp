@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:mealsapp/menu_apetizers.dart';
 class Coursescategory extends StatelessWidget {
   const Coursescategory({super.key});
 
@@ -42,11 +43,22 @@ class Coursescategory extends StatelessWidget {
               ),
             ),
           ),
+          
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
+            GestureDetector(
+  onTap: () {
+    // Navigate to the next page here
+    // For example:
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const MenuAppetizer()), // Replace NextPage() with your desired destination page
+    );
+  },
+                 
          
-             Container(
+             child: Container(
                margin: const EdgeInsets.only(
                   left: .0,
                   right: .0,
@@ -63,6 +75,7 @@ borderRadius: BorderRadius.circular(10),
 
      child:  Row(
                   children: [
+                    
                     const Padding(
                       padding: EdgeInsets.only(left: 20.0, top: 5.0,right: 245.0),
                       child: Text(
@@ -92,7 +105,8 @@ borderRadius: BorderRadius.circular(10),
              ),
       
              ),
-    ],
+          ),
+          ],
 
    ),
 
@@ -618,7 +632,7 @@ borderRadius: BorderRadius.circular(10),
 
    ),
 
-   
+      
 
   
         ],
